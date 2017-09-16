@@ -27,10 +27,8 @@ It depends on JDK 1.5 or later.
 
 
 ### Implementation of Junit test cases details:
-
-1. Test cases have been written for StringUtils.java as part of StringUtilsTest.java. Since the project already contained test cases I have added new methods in.java and added corresponding test cases into .java.
                                  
-   
+Existing junit test cases were checked and run to the functionality of the joda time library  
    
    
 ###Implementation of build scripts:
@@ -119,11 +117,11 @@ Jcmd :
 The jcmd utility is used to send diagnostic command requests to the JVM, where these requests are useful for controlling Java Flight Recordings, troubleshoot, and diagnose JVM and Java Applications. It must be used on the same machine where the JVM is running, and have the same effective user and group identifiers that were used to launch the JVM.
 
 The below functionality to print thread contents was tested with jcmd : 
-â€¢	Print all threads with stack traces
+•	Print all threads with stack traces
 jcmd <process id/main class> Thread.print
 
 Java Mission Control : 
-Java Mission Control (JMC) is a new JDK profiling and diagnostic tools platform for HotSpot JVM. Itâ€™s a tool suite basic monitoring, managing, and production time profiling and diagnostics with high performance. Java Mission Control minimizes the performance overhead that's usually an issue with profiling tools. 
+Java Mission Control (JMC) is a new JDK profiling and diagnostic tools platform for HotSpot JVM. It’s a tool suite basic monitoring, managing, and production time profiling and diagnostics with high performance. Java Mission Control minimizes the performance overhead that's usually an issue with profiling tools. 
 Java mission control was run for the driver program and data about memory and processor usage was captured 
 Command : jmc
 
@@ -179,7 +177,8 @@ This tool is a Remote Method Invocation (RMI) server application that monitors t
 jstatd -J-Djava.security.policy=all.policy
 
 visualgc utility
-This utility provides a graphical view of the garbage collection system. As with jstat, it uses the built-in instrumentation of Java HotSpot VM. See The visualgc Tool.
+This utility provides a graphical view of the garbage collection system. 
+As with jstat, it uses the built-in instrumentation of Java HotSpot VM. 
 
 
 
